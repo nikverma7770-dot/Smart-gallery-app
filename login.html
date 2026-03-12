@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Gallery Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-screen bg-sand text-ink">
+    <div class="ambient"></div>
+    <main class="relative z-10 flex min-h-screen items-center justify-center px-4 py-12">
+      <div class="card auth-card w-full max-w-md">
+        <div class="space-y-2">
+          <p class="kicker">Smart Gallery</p>
+          <h1 class="headline text-3xl">Welcome back</h1>
+          <p class="subhead">
+            Sign in to access your curated collections and filters.
+          </p>
+        </div>
+        <form id="login-form" class="mt-6 grid gap-4">
+          <label class="form-field">
+            <span class="label">Email</span>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              placeholder="demo@smart.gallery"
+              required
+            />
+          </label>
+          <label class="form-field">
+            <span class="label">Password</span>
+            <input
+              class="form-input"
+              type="password"
+              name="password"
+              placeholder="gallery123"
+              required
+            />
+          </label>
+          <button class="primary-btn" type="submit">Sign in</button>
+          <p id="login-error" class="text-sm text-red-700 hidden"></p>
+        </form>
+        <div class="mt-6 text-xs text-ink/60">
+          Demo account: demo@smart.gallery / gallery123
+        </div>
+      </div>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>
